@@ -1,49 +1,61 @@
-<mxfile host="app.diagrams.net" modified="2022-12-14T02:21:23.038Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="3fS281FizxSPu1FL3QGJ" version="20.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-15T14:20:51.687Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" etag="NhYxfewKJeTnvK7YL_G_" version="20.7.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="游戏主流程">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1465" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-0" target="_uNkih6J6qpBRCYkUTNe-2">
+        <mxCell id="pP1erUTDtoCJ0BBh0rQx-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-0" target="pP1erUTDtoCJ0BBh0rQx-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-0" value="游戏开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="70" width="120" height="80" as="geometry" />
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-0" value="游戏开始" style="ellipse;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="220" y="20" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-1" value="游戏结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="550" width="120" height="80" as="geometry" />
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-1" value="游戏结束" style="ellipse;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="220" y="660" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-2" target="_uNkih6J6qpBRCYkUTNe-4">
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-2" target="_uNkih6J6qpBRCYkUTNe-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-2" value="分配角色" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="180" width="120" height="60" as="geometry" />
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-2" value="分配角色" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="220" y="290" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-4" target="_uNkih6J6qpBRCYkUTNe-11">
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-4" target="_uNkih6J6qpBRCYkUTNe-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-4" value="分发手牌" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="260" width="120" height="60" as="geometry" />
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-4" value="分发手牌" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="220" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-11" target="_uNkih6J6qpBRCYkUTNe-14">
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-11" target="_uNkih6J6qpBRCYkUTNe-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-11" value="玩家回合" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="350" width="120" height="60" as="geometry" />
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-11" value="玩家回合" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="220" y="460" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-17" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-14" target="_uNkih6J6qpBRCYkUTNe-1">
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-17" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-14" target="_uNkih6J6qpBRCYkUTNe-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-18" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-14" target="_uNkih6J6qpBRCYkUTNe-11">
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-18" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_uNkih6J6qpBRCYkUTNe-14" target="_uNkih6J6qpBRCYkUTNe-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="480" y="480" />
-              <mxPoint x="480" y="374" />
+              <mxPoint x="360" y="590" />
+              <mxPoint x="360" y="484" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_uNkih6J6qpBRCYkUTNe-14" value="游戏是否结束" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="360" y="440" width="80" height="80" as="geometry" />
+        <mxCell id="_uNkih6J6qpBRCYkUTNe-14" value="游戏是否结束" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="240" y="550" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pP1erUTDtoCJ0BBh0rQx-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pP1erUTDtoCJ0BBh0rQx-0" target="pP1erUTDtoCJ0BBh0rQx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pP1erUTDtoCJ0BBh0rQx-0" value="初始化卡池" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pP1erUTDtoCJ0BBh0rQx-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pP1erUTDtoCJ0BBh0rQx-3" target="_uNkih6J6qpBRCYkUTNe-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pP1erUTDtoCJ0BBh0rQx-3" value="洗牌" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="210" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
