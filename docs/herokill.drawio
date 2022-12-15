@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-15T14:20:51.687Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" etag="NhYxfewKJeTnvK7YL_G_" version="20.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-15T14:42:09.636Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" etag="DKmeWnjFLSv0hCxbSayM" version="20.7.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="游戏主流程">
     <mxGraphModel dx="1465" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -56,6 +56,77 @@
         </mxCell>
         <mxCell id="pP1erUTDtoCJ0BBh0rQx-3" value="洗牌" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="220" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="iTS5BKlcep-i6s88RPVp" name="回合状态切换">
+    <mxGraphModel dx="1465" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sKds9e4WLcV43oVWEoqj-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-1" target="sKds9e4WLcV43oVWEoqj-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-1" value="" style="ellipse;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="225" y="110" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-2" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="225" y="640" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="sKds9e4WLcV43oVWEoqj-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-7" target="sKds9e4WLcV43oVWEoqj-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.992;exitY=0.631;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-7" target="sKds9e4WLcV43oVWEoqj-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="360" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="420" y="358" />
+              <mxPoint x="420" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-20" value="判定阶段失败，跳过出牌阶段" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sKds9e4WLcV43oVWEoqj-19">
+          <mxGeometry x="-0.1499" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-7" value="摸牌阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-9" target="sKds9e4WLcV43oVWEoqj-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-9" value="出牌阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-11" value="判定阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-12" target="sKds9e4WLcV43oVWEoqj-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-12" value="弃牌阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-14" target="sKds9e4WLcV43oVWEoqj-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-14" value="回合开始" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-16" target="sKds9e4WLcV43oVWEoqj-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKds9e4WLcV43oVWEoqj-16" value="回合结束" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="560" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
