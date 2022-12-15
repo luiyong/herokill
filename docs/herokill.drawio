@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-15T14:46:24.633Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" etag="qJ5mLwLHiXaoDLzjRA2w" version="20.7.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-15T15:12:52.116Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" etag="NeWO8y2oQ01xEDOIzJPC" version="20.7.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="游戏主流程">
     <mxGraphModel dx="1465" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -98,19 +98,31 @@
             <mxPoint x="-1" y="26" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-7" target="QN5PqZ4StxXDX0ZFz8ns-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-7" value="摸牌阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="320" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-9" target="sKds9e4WLcV43oVWEoqj-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-9" target="QN5PqZ4StxXDX0ZFz8ns-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-9" value="出牌阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-11" target="QN5PqZ4StxXDX0ZFz8ns-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-11" value="判定阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="240" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-12" target="sKds9e4WLcV43oVWEoqj-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-12" target="QN5PqZ4StxXDX0ZFz8ns-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-12" value="弃牌阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
@@ -119,14 +131,38 @@
         <mxCell id="sKds9e4WLcV43oVWEoqj-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-14" target="sKds9e4WLcV43oVWEoqj-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-14" target="QN5PqZ4StxXDX0ZFz8ns-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-14" value="回合开始" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="160" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-16" target="sKds9e4WLcV43oVWEoqj-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKds9e4WLcV43oVWEoqj-16" target="QN5PqZ4StxXDX0ZFz8ns-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-16" value="回合结束" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-4" value="观星在此行动" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="162.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-7" value="变法在判定后行动" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="242.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-9" value="太极在摸牌前行动" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="322.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-11" value="咏物在出牌后行动" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="402.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-13" value="楚楚在回合结束行动" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="562.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="QN5PqZ4StxXDX0ZFz8ns-15" value="雄才在弃牌阶段行动" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="482.5" width="120" height="55" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
