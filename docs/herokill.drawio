@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-15T14:42:09.636Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" etag="DKmeWnjFLSv0hCxbSayM" version="20.7.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-15T14:46:24.633Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" etag="qJ5mLwLHiXaoDLzjRA2w" version="20.7.3" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="游戏主流程">
     <mxGraphModel dx="1465" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -95,7 +95,7 @@
         </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-20" value="判定阶段失败，跳过出牌阶段" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sKds9e4WLcV43oVWEoqj-19">
           <mxGeometry x="-0.1499" y="1" relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
+            <mxPoint x="-1" y="26" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="sKds9e4WLcV43oVWEoqj-7" value="摸牌阶段" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=rgb(255, 255, 255);rounded=1;arcSize=10;dashed=0;" vertex="1" parent="1">
