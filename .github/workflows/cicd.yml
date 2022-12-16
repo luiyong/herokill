@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: build
+      run: sh ./build.sh
+    - name: deploy
+      uses: easingthemes/ssh-deploy@main
+      env: 
+        SSH_SERVER_KEY: ${{ secrets.SSH_SERVER_KEY }}
+        SOURCE: ../build/release-cpp11/bin/
+        REMOTE_HOST: ${{ secrets.SSH_SERVER_IP }}
+        REMOTE_USER: ${{ secrets.SSH_SERVER_USER }}
+        TARGET: /home/lvy/release/
+
