@@ -4,4 +4,7 @@ execute_process(COMMAND echo "const char* herokill_server_version =" \"${build_t
             )
 add_executable(herokill_server main.cpp
         CardPool.cpp
+        Player.cpp
+        Room.cpp
+
         )
