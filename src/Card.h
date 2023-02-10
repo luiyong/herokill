@@ -9,9 +9,19 @@ namespace herokill
     class Card
     {
     public:
-        Card()
+        Card(int id, CardType type, const std::string& name, const std::string& desc):
+        id_(id), type_(type), name_(name), desc_(desc)
         {
 
+        }
+        int id()const
+        {
+            return id_;
+        }
+
+        std::string name()const
+        {
+            return name_;
         }
     private:
         int id_;
