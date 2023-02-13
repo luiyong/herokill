@@ -17,7 +17,7 @@ int main(void)
         room.addPlayer(std::make_shared<Player>(i));
     }
     room.dumpPlayer();
-
+    room.run();
     CardPool pools;
     std::cout << "card pool init:" << std::endl;
     pools.dumpCards();

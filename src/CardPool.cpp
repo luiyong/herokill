@@ -59,3 +59,17 @@ void CardPool::dumpCards(void)
 }
 
 
+std::vector<Card> CardPool::dealCards(int nums)
+{
+	std::vector<Card> ret;
+	int size = cards_.size();
+
+	for (int i = 0; i < nums; i++)
+	{
+		ret.push_back(cards_[i]);
+		cards_.pop_front();
+
+	}
+	return ret;
+}
+
