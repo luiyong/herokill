@@ -1,6 +1,9 @@
 #include "Room.h"
 
+#include "GameRule.h"
 #include "Player.h"
+#include "Singleton.h"
+
 #include <algorithm>
 
 #include <iostream>
@@ -31,5 +34,13 @@ void Room::dumpPlayer()
 
 void Room::run()
 {
-
+    Singleton<GameRule>::Instance().beforeRun();
+    while(!gameOver_)
+    {
+        for(auto it = players_.begin(); it != players_.end(); it++)
+        {
+            //
+        }
+        gameOver_ = true;
+    }
 }

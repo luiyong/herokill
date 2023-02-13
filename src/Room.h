@@ -13,7 +13,7 @@ namespace herokill
     {
     public:
         
-        Room(int id, RoomType type):id_(id), type_(type){}
+        Room(int id, RoomType type):id_(id), type_(type), gameOver_(false){}
         ~Room(){}
         void addPlayer(const PlayerPtr& player);
         void removePlayer(const PlayerPtr& player);
@@ -23,6 +23,7 @@ namespace herokill
         int id_;
         RoomType type_;
         std::vector<PlayerPtr> players_;
+        bool gameOver_;
     };
 }
 #endif
