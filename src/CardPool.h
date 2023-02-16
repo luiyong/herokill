@@ -18,6 +18,7 @@ namespace herokill
         std::vector<Card> dealCards(int nums);
     private:
         DequeCards    cards_;
+
     };
 }
 #endif
