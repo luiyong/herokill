@@ -17,9 +17,11 @@ namespace herokill
         ~Room(){}
         void addPlayer(PlayerPtr& player);
         void removePlayer(PlayerPtr& player);
+        void removeAllPlayer(void);
         PlayerPtr findNextPlayer(const PlayerPtr& player);
         void dumpPlayer();
         bool gameIsOver();
+        int length(void);
         void run();
     private:
         int id_;

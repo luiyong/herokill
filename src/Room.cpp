@@ -26,6 +26,13 @@ void Room::removePlayer(PlayerPtr& player)
     }
 }
 
+void Room::removeAllPlayer(void)
+{
+    int size = players_.size();
+    while(size-- > 0)
+        players_.pop_back();
+}
+
 PlayerPtr Room::findNextPlayer(const PlayerPtr& player)
 {
     std::vector<PlayerPtr>::iterator it = std::find(players_.begin(), players_.end(), player);
@@ -120,4 +127,9 @@ void Room::run()
             std::cout << "winner is: " << (*it)->id() << std::endl;
         }
     }
+}
+
+int Room::length(void)
+{
+    return players_.size();
 }

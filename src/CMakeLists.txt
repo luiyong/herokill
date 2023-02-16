@@ -3,6 +3,7 @@ execute_process(COMMAND echo "const char* herokill_server_version =" \"${build_t
           OUTPUT_FILE ${CMAKE_CURRENT_BINARY_DIR}/ServerVersion.cc
             )
 add_executable(herokill_server main.cpp
+        Card.cpp
         CardPool.cpp
         GameRule.cpp
         Player.cpp
