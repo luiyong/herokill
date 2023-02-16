@@ -5,12 +5,12 @@
 
 namespace herokill
 {
-    enum CardType{kDiamond, kHeart, kClub, kSpade};
+    enum CardColor{kDiamond, kHeart, kClub, kSpade};
     class Card
     {
     public:
-        Card(int id, CardType type, const std::string& name, const std::string& desc):
-        id_(id), type_(type), name_(name), desc_(desc)
+        Card(int id, int code, CardColor color, const std::string& name, const std::string& desc = ""):
+        id_(id), code_(code), color_(color), name_(name), desc_(desc)
         {
 
         }
@@ -23,9 +23,21 @@ namespace herokill
         {
             return name_;
         }
+
+        int code()const
+        {
+            return code_;
+        }
+        std::string stringCode()const;
+        std::string color()const;
+        
     private:
+
+        std::string colorToString(CardColor color)const;
+        std::string codeToString(int code)const;
         int id_;
-        CardType type_;
+        CardColor color_;
+        int code_;
         std::string    name_;
         std::string    desc_;
     };

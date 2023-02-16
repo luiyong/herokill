@@ -96,7 +96,7 @@ void Player::dumpHandCard(void)
     std::cout << "player id: " << id_ << " cards: " << std::endl;
     for(auto it = handCards_.begin(); it != handCards_.end(); it++)
     {
-        std::cout << it->id() << " " << it->name() << std::endl;
+        std::cout << it->color() << " " << it->stringCode() << " " << it->name() << std::endl;
     }
     std::cout << std::endl;
 }

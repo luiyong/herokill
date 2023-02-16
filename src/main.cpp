@@ -20,5 +20,7 @@ int main(void)
     room.dumpPlayer();
     room.run();
     std::cout << "game over!!!" << std::endl;
+
+    room.removeAllPlayer();
     return 0;
 }
