@@ -13,17 +13,19 @@ namespace herokill
     {
     public:
         
-        Room(int id, RoomType type):id_(id), type_(type), gameOver_(false){}
+        Room(int id, RoomType type):id_(id), type_(type), alive_(0){}
         ~Room(){}
-        void addPlayer(const PlayerPtr& player);
-        void removePlayer(const PlayerPtr& player);
+        void addPlayer(PlayerPtr& player);
+        void removePlayer(PlayerPtr& player);
+        PlayerPtr findNextPlayer(const PlayerPtr& player);
         void dumpPlayer();
+        bool gameIsOver();
         void run();
     private:
         int id_;
         RoomType type_;
         std::vector<PlayerPtr> players_;
-        bool gameOver_;
+        int alive_;
     };
 }
 #endif
