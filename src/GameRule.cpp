@@ -46,13 +46,13 @@ int GameRule::doPeach(const PlayerPtr& from, std::vector<PlayerPtr>& to)
     return 0;
 }
 
-int GameRule::action(const Card* card, const PlayerPtr& from, std::vector<PlayerPtr>& to)
+int GameRule::action(const std::string &key, const PlayerPtr& from, std::vector<PlayerPtr>& to)
 {
-    if(card->name() == "Attack")
+    if(key == "Attack")
     {
         return doKill(from, to);
     }
-    else if(card->name() == "Peach")
+    else if(key == "Peach")
     {
         return doPeach(from, to);
     }

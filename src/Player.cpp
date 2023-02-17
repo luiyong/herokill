@@ -49,7 +49,7 @@ void Player::playCard()
                         std::cout << "next player id: " << player->id() << " hp: " << player->hp() << std::endl;
                         std::vector<PlayerPtr> to;
                         to.push_back(player);
-                        Singleton<GameRule>::Instance().action(&(*it), shared_from_this(), to);
+                        Singleton<GameRule>::Instance().action(it->name(), shared_from_this(), to);
                         std::cout << "next player hp: " << player->hp() << std::endl;
                         it = handCards_.erase(it);
                 }
@@ -64,7 +64,7 @@ void Player::playCard()
                             std::vector<PlayerPtr> to;
                             to.push_back(shared_from_this());
                             
-                            Singleton<GameRule>::Instance().action(&(*it), shared_from_this(), to);
+                            Singleton<GameRule>::Instance().action(it->name(), shared_from_this(), to);
                             it = handCards_.erase(it);
                         }
                         else

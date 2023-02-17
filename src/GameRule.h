@@ -19,7 +19,7 @@ namespace herokill
         ~GameRule();
         void beforeRun();
         std::vector<Card> drawCard(int nums);
-        int action(const Card* card, const PlayerPtr& from, std::vector<PlayerPtr>& to);
+        int action(const std::string &key, const PlayerPtr& from, std::vector<PlayerPtr>& to);
     private:
         int doKill(const PlayerPtr& from, std::vector<PlayerPtr>& to);
         int doPeach(const PlayerPtr& from, std::vector<PlayerPtr>& to);
