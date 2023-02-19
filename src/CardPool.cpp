@@ -17,18 +17,23 @@ CardPool::CardPool()
         int cardType = i % 4;
         if(cardType == 0)
         {
-            cards_.push_back(Card(i + 1, (i + 1) % 14, kDiamond, baseCards[i % 3], baseCards[i % 3]));
+            std::unique_ptr<Card> card(new Card(i + 1, (i + 1) % 14, kDiamond, baseCards[i % 3], baseCards[i % 3]));
+
+            cards_.push_back(std::move(card));
         }else if(cardType == 1)
         {
-            cards_.push_back(Card(i + 1, (i + 1) % 14, kHeart, baseCards[i % 3], baseCards[i % 3]));
+            std::unique_ptr<Card> card(new Card(i + 1, (i + 1) % 14, kHeart, baseCards[i % 3], baseCards[i % 3]));
+            cards_.push_back(std::move(card));
         }
         else if(cardType == 2)
         {
-            cards_.push_back(Card(i + 1, (i + 1) % 14, kClub, baseCards[i % 3], baseCards[i % 3]));
+            std::unique_ptr<Card> card(new Card(i + 1, (i + 1) % 14, kClub, baseCards[i % 3], baseCards[i % 3]));
+            cards_.push_back(std::move(card));
         }
         else
         {
-            cards_.push_back(Card(i + 1, (i + 1) % 14, kSpade, baseCards[i % 3], baseCards[i % 3]));
+            std::unique_ptr<Card> card(new Card(i + 1, (i + 1) % 14, kSpade, baseCards[i % 3], baseCards[i % 3]));
+            cards_.push_back(std::move(card));
         }
     }
 }
@@ -54,18 +59,19 @@ void CardPool::dumpCards(void)
 {
     for(auto it = cards_.begin(); it != cards_.end(); it++)
     {
-        std::cout << "color: " << it->color() << " code: " << it->stringCode() << " name: " << it->name() << std::endl;
+        std::cout << "color: " << (*it)->color() << " code: " << (*it)->stringCode() << " name: " << (*it)->name() << std::endl;
     }
 }
 
-std::vector<Card> CardPool::dealCards(int nums)
+std::vector<std::unique_ptr<Card>> CardPool::dealCards(int nums)
 {
-	std::vector<Card> ret;
+	std::vector<std::unique_ptr<Card>> ret;
 	int size = cards_.size();
 
+    std::cout << "card pool size: " << size << std::endl;
 	for (int i = 0; i < nums; i++)
 	{
-		ret.push_back(cards_[i]);
+		ret.push_back(std::move(cards_.front()));
 		cards_.pop_front();
 
 	}

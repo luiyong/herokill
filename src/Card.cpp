@@ -2,6 +2,31 @@
 
 using namespace herokill;
 
+Card::Card(int id, int code, CardColor color, const std::string& name, const std::string& desc = ""):
+        id_(id), code_(code), color_(color), name_(name), desc_(desc)
+{
+
+}
+
+Card::~Card()
+{
+
+}
+
+int Card::id()const
+{
+    return id_;
+}
+
+std::string Card::name()const
+{
+    return name_;
+}
+
+int Card::code()const
+{
+    return code_;
+}
 
 std::string Card::colorToString(CardColor color)const
 {

@@ -9,25 +9,11 @@ namespace herokill
     class Card
     {
     public:
-        Card(int id, int code, CardColor color, const std::string& name, const std::string& desc = ""):
-        id_(id), code_(code), color_(color), name_(name), desc_(desc)
-        {
-
-        }
-        int id()const
-        {
-            return id_;
-        }
-
-        std::string name()const
-        {
-            return name_;
-        }
-
-        int code()const
-        {
-            return code_;
-        }
+        Card(int id, int code, CardColor color, const std::string& name, const std::string& desc);
+        ~Card();
+        int id()const;
+        std::string name()const;
+        int code()const;
         std::string stringCode()const;
         std::string color()const;
         
