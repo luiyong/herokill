@@ -13,8 +13,8 @@ namespace herokill
     {
     public:
         
-        Room(int id, RoomType type):id_(id), type_(type), alive_(0){}
-        ~Room(){}
+        Room(int id, RoomType type);
+        ~Room();
         void addPlayer(PlayerPtr& player);
         void removePlayer(PlayerPtr& player);
         void removeAllPlayer(void);

@@ -1,8 +1,6 @@
 #ifndef __HEROKILL_PLAYER__
 #define __HEROKILL_PLAYER__
 
-#include "Card.h"
-
 #include <memory>
 #include <string>
 #include <vector>
@@ -14,9 +12,9 @@ namespace herokill
     class Player : public std::enable_shared_from_this<Player>
     {
     public:
-        Player(int id):id_(id), hp_(4){}
-        ~Player(){}
-        void drawCard(std::vector<Card>);
+        Player(int id);
+        ~Player();
+        void drawCard(std::vector<std::unique_ptr<Card>>&);
         void playCard();
         void discard();
         void dumpHandCard(void);
@@ -36,7 +34,7 @@ namespace herokill
         int id_;
         int hp_;
         Room *room_;
-        std::vector<Card> handCards_;
+        std::vector<std::unique_ptr<Card>> handCards_;
     };
 }
 #endif

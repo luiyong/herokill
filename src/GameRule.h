@@ -18,7 +18,7 @@ namespace herokill
         GameRule();
         ~GameRule();
         void beforeRun();
-        std::vector<Card> drawCard(int nums);
+        std::vector<std::unique_ptr<Card>> drawCard(int nums);
         int action(const std::string &key, const PlayerPtr& from, std::vector<PlayerPtr>& to);
     private:
         int doKill(const PlayerPtr& from, std::vector<PlayerPtr>& to);

@@ -62,7 +62,7 @@ int GameRule::action(const std::string &key, const PlayerPtr& from, std::vector<
     }
 }
 
-std::vector<Card> GameRule::drawCard(int nums)
+std::vector<std::unique_ptr<Card>> GameRule::drawCard(int nums)
 {
     return pools_->dealCards(nums);
 }

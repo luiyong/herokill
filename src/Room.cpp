@@ -1,5 +1,6 @@
 #include "Room.h"
 
+#include "Card.h"
 #include "GameRule.h"
 #include "Player.h"
 #include "Singleton.h"
@@ -9,6 +10,16 @@
 #include <iostream>
 
 using namespace herokill;
+
+Room::Room(int id, RoomType type):id_(id), type_(type), alive_(0)
+{
+
+}
+
+Room::~Room()
+{
+
+}
 
 void Room::addPlayer(PlayerPtr& player)
 {

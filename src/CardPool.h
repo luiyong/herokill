@@ -2,6 +2,7 @@
 #define __HEROKILL_CARDPOOL__
 
 #include <deque>
+#include <memory>
 #include <vector>
 
 namespace herokill
@@ -10,12 +11,12 @@ namespace herokill
     class CardPool
     {
     public:
-        typedef std::deque<Card> DequeCards;
+        typedef std::deque<std::unique_ptr<Card>> DequeCards;
         CardPool();
         ~CardPool();
         void  shuffle(void);
         void dumpCards(void);
-        std::vector<Card> dealCards(int nums);
+        std::vector<std::unique_ptr<Card>> dealCards(int nums);
     private:
         DequeCards    cards_;
 
